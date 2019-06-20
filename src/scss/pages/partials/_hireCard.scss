@@ -10,6 +10,7 @@
          padding-bottom:1rem;
          border-radius:5px;
          align-items:center;
+         box-shadow:$shadow;
          @include mq("phone"){
           width:10rem;
          }
@@ -21,15 +22,33 @@
          }
          input{
               &[type="text"]{
+                   font-family: 'Hind';
+                   font-size:1.5rem;
                    width:60%;
                    border:0;
                    background-color: $whitesh;
+                   color:$electro;
                    &:focus{
                         outline:none;
+                        color:$electro;
                    }
               }
               &[type="submit"]{
+               font-family: 'Hind';
                width:15%;
+               background-color: $blueNight;
+               border:0;
+               padding-top:0.5rem;
+               padding-bottom:0.5rem;
+               border-radius: 1px;
+               color: $whitesh;
+               text-transform: capitalize;
+               font-weight: 600;
+               transition:0.2s ease;
+               &:hover{
+                    background-color: $electro;
+                    color: $whitesh;
+               }
               }
          }
          #jobs{
