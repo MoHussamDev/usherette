@@ -297,7 +297,8 @@ body {
   max-height: 3rem;
   height: 3rem;
   position: fixed;
-  z-index: 100000; }
+  z-index: 100000;
+  top: 0; }
   #navigation #brand {
     padding: 0;
     margin: 0;
@@ -430,6 +431,45 @@ header {
   header #hireCardWrapper {
     height: 5vh;
     border-radius: 10px 10px 10px 10px; }
+    header #hireCardWrapper #hireCard {
+      background-color: #f5f6fa;
+      height: 5rem;
+      width: 100%;
+      display: -webkit-flex;
+      display: flex;
+      padding-right: 2rem;
+      padding-left: 2rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      border-radius: 5px;
+      -webkit-align-items: center;
+      align-items: center; }
+      @media only screen and (max-width: 399px) {
+        header #hireCardWrapper #hireCard {
+          width: 10rem; } }
+      header #hireCardWrapper #hireCard i {
+        width: 5%;
+        color: #2f3640;
+        font-size: 1.5rem;
+        font-weight: 100; }
+      header #hireCardWrapper #hireCard input[type="text"] {
+        width: 60%;
+        border: 0;
+        background-color: #f5f6fa; }
+        header #hireCardWrapper #hireCard input[type="text"]:focus {
+          outline: none; }
+      header #hireCardWrapper #hireCard input[type="submit"] {
+        width: 15%; }
+      header #hireCardWrapper #hireCard #jobs {
+        width: 20%;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        padding: 1rem; }
+        header #hireCardWrapper #hireCard #jobs h6 {
+          margin: 0;
+          padding: 0; }
 
 #respNav {
   display: none; }
@@ -446,6 +486,7 @@ header {
       width: 101vw;
       margin-top: -1px;
       z-index: 10000;
+      overflow-x: hidden;
       -webkit-transform: translateX(24rem);
       transform: translateX(24rem);
       transition: 0.5s ease-in-out; }

@@ -1,3 +1,4 @@
+@import 'hireCard';
 header{
     background: linear-gradient(to left bottom, $electroOp, $blueBatOp), url('../../../assets/img/wide.jpg') no-repeat 0 0;
     background-size:cover;
@@ -21,7 +22,7 @@ header{
     }
     #hireCardWrapper{
         height:5vh;
-       
         border-radius: 10px 10px 10px 10px;
+        @include HireCard
     }
 }

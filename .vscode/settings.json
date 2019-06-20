@@ -1,0 +1,6 @@
+{
+    "favorites.resources": [
+        "src\\scss\\pages\\partials\\_hireCard.scss",
+        "src\\scss\\tools\\_vars.scss"
+    ]
+}

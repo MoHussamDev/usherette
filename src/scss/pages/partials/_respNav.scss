@@ -10,6 +10,7 @@
         width:101vw;
         margin-top:-1px;
         z-index:10000;
+        overflow-x: hidden;
         transform:translateX(24rem);
         transition: 0.5s ease-in-out;
         #innerResp{
