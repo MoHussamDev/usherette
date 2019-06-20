@@ -1,0 +1,129 @@
+@mixin inputFeild {
+  
+  .input-field {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    padding: 0 .75rem;
+    min-height: 1px;
+    width: 100%;
+    label {
+      color: $yellow;
+      font-size:0.9rem;
+      font-weight: 400;
+      cursor: pointer;
+      text-transform: uppercase;
+      vertical-align: middle;
+      transform: translateY(0.5rem);
+      letter-spacing:2px;
+      transition: all .2s ease-out;
+      left: .75rem;
+      position: absolute;
+      top: 0;
+    }
+    input[type=text],input[type=password]{
+      border: none;
+      color:$yellow;
+      letter-spacing: 2px;   
+      border-bottom: 0.5px solid $yellowShade;
+      box-shadow: 0 1px 0 0 $yellowShade;
+      border-radius: 0;
+      outline: none;
+      height: 3rem;
+      font-size: 1rem;
+      margin: 0 0 .5rem 0;
+      padding: 0;
+      width:100%;
+      transition: all .3s;
+      background-color: $blueNight;
+      &:focus{
+        background-color: $blueNight;
+
+       + label{
+          transform: translateY(-1rem);
+          font-size:0.7rem;
+          color:$yellowShade;
+        }
+        outline:none;
+ 
+       } 
+       &:valid{
+    
+          + label {
+            transform: translateY(-1rem);
+            font-size:0.7rem;
+            color:$yellowShade;
+          }
+      
+      }
+    
+    }
+    :-webkit-autofill {
+      -webkit-box-shadow: 0 0 0px 1000px $blueNight inset;
+      -webkit-background-color: $blueNight;
+      color:$blueNight;
+      -webkit-text-fill-color:$yellow; 
+      
+      + label {
+        transform: translateY(-1rem);
+        font-size:0.7rem;
+        color:$yellowShade;
+      }
+    }
+  
+  }
+
+}
+
+//     input {
+//       &:focus:valid {
+//         + label {
+//           color: #009688;
+//           transform: translateY(-2rem);
+//         }
+//         border-bottom: 1px solid #009688;
+//         box-shadow: 0 1px 0 0 #009688;
+//       }
+//       &:valid {
+//         + label {
+//           color: #14a0d2;
+//           transform: translateY(-2rem);
+//         }
+//         border-bottom: 1px solid #14a0d2;
+//         box-shadow: 0 1px 0 0 #14a0d2;
+//       }
+//       &:disabled {
+//         border-bottom: 1px solid #616161;
+//         box-shadow: 0 1px 0 0 #616161;
+//         background-color: transparent;
+//       }
+//       &[value=""]:disabled + label {
+//         color: #616161;
+//         transform: translateY(0rem);
+//         background-color: #fafafa;
+//       }
+//       &:not([value=""]):disabled + label {
+//         color: #616161;
+//         transform: translateY(-2rem);
+//         background-color: #fafafa;
+//       }
+//       &[value=""]:valid {
+//         + label {
+//           color: #14a0d2;
+//           transform: translateY(0rem);
+//         }
+//         border-bottom: 1px solid #14a0d2;
+//         box-shadow: 0 1px 0 0 #14a0d2;
+//       }
+//       &:not([value=""]):valid {
+//         + label {
+//           color: #14a0d2;
+//           transform: translateY(-2rem);
+//         }
+//         border-bottom: 1px solid #14a0d2;
+//         box-shadow: 0 1px 0 0 #14a0d2;
+//       }
+//     }
+//   }
+// }

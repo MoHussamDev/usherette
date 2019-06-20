@@ -1,0 +1,30 @@
+@mixin loginPopup{
+
+    #loginPopup{
+        position:absolute;
+        z-index:110000;
+        top:3rem;
+        right:31%;
+        width:22rem;
+        height:20rem;
+        background-color: $blueNight;
+        padding-top:1rem;
+        display:flex;
+        flex-direction:column;
+        @include mq("phone"){
+            display:none;
+        }
+        @include mq("desktop"){
+            top:5vh;
+            right:37%;
+        }
+        #feild{
+            width:100%;
+            height:5rem;
+            @include inputFeild;
+        }
+        #submiting{
+            display:flex;
+        }
+    }
+}

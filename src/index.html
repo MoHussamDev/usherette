@@ -19,9 +19,31 @@
           <div class="col-md-10" id="menue">
             <ul id="navigate">
               <li><a href="#"> <i class="fa fa-cogs"></i><span>How it works </span></a></li>
-              <li><a href="#"> <i class="fa fa-sign-in"></i><span>logIn </span></a></li>
+              <li class="act"><a href="#"> <i class="fa fa-sign-in"></i><span>logIn </span></a></li>
             </ul>
             <div id="buttonSec"> <a href="#" id="joinUs">Join Us </a><a href="#" id="hireUsher">Hire Usher</a></div>
+            <div id="loginPopup">
+              <form autocomplete="nope">
+                <div id="feild">
+                  <div class="input-field"> 
+                    <input type="text" autocomplete="nope" required name="username">
+                    <label>Mobile No Or Email</label>
+                  </div>
+                </div>
+                <div id="feild">
+                  <div class="input-field"> 
+                    <input type="password" autocomplete="nope" required name="password">
+                    <label>Password</label>
+                  </div>
+                </div>
+                <div id="submiting">
+                  <div id="rememPass">
+                    <input type="checkbox"><span>Remember Password</span>
+                  </div>
+                  <input type="submit" value="login">
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>

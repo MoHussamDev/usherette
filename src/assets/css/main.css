@@ -355,7 +355,14 @@ body {
       -webkit-align-items: center;
       align-items: center; }
       #navigation #menue #navigate li {
-        margin-left: 0.5rem; }
+        margin-left: 0.5rem;
+        height: 100%;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        padding-left: 1rem;
+        padding-right: 1rem; }
         #navigation #menue #navigate li a {
           font-family: 'Hind';
           color: #f5f6fa;
@@ -370,6 +377,10 @@ body {
             margin-right: 0.5rem;
             color: #e1b12c;
             font-size: 1rem; }
+      #navigation #menue #navigate .act {
+        background-color: #353b48; }
+        #navigation #menue #navigate .act a {
+          color: #fbc531 !important; }
     #navigation #menue #buttonSec {
       display: -webkit-flex;
       display: flex;
@@ -407,6 +418,92 @@ body {
         transition: 0.2s ease; }
         #navigation #menue #buttonSec #hireUsher:hover {
           background-color: #4b8cc8; }
+    #navigation #menue #loginPopup {
+      position: absolute;
+      z-index: 110000;
+      top: 3rem;
+      right: 31%;
+      width: 22rem;
+      height: 20rem;
+      background-color: #353b48;
+      padding-top: 1rem;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      flex-direction: column; }
+      @media only screen and (max-width: 399px) {
+        #navigation #menue #loginPopup {
+          display: none; } }
+      @media only screen and (max-width: 1247px) {
+        #navigation #menue #loginPopup {
+          top: 5vh;
+          right: 37%; } }
+      #navigation #menue #loginPopup #feild {
+        width: 100%;
+        height: 5rem; }
+        #navigation #menue #loginPopup #feild .input-field {
+          position: relative;
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          box-sizing: border-box;
+          padding: 0 .75rem;
+          min-height: 1px;
+          width: 100%; }
+          #navigation #menue #loginPopup #feild .input-field label {
+            color: #fbc531;
+            font-size: 0.9rem;
+            font-weight: 400;
+            cursor: pointer;
+            text-transform: uppercase;
+            vertical-align: middle;
+            -webkit-transform: translateY(0.5rem);
+            transform: translateY(0.5rem);
+            letter-spacing: 2px;
+            transition: all .2s ease-out;
+            left: .75rem;
+            position: absolute;
+            top: 0; }
+          #navigation #menue #loginPopup #feild .input-field input[type=text], #navigation #menue #loginPopup #feild .input-field input[type=password] {
+            border: none;
+            color: #fbc531;
+            letter-spacing: 2px;
+            border-bottom: 0.5px solid #e1b12c;
+            box-shadow: 0 1px 0 0 #e1b12c;
+            border-radius: 0;
+            outline: none;
+            height: 3rem;
+            font-size: 1rem;
+            margin: 0 0 .5rem 0;
+            padding: 0;
+            width: 100%;
+            transition: all .3s;
+            background-color: #353b48; }
+            #navigation #menue #loginPopup #feild .input-field input[type=text]:focus, #navigation #menue #loginPopup #feild .input-field input[type=password]:focus {
+              background-color: #353b48;
+              outline: none; }
+              #navigation #menue #loginPopup #feild .input-field input[type=text]:focus + label, #navigation #menue #loginPopup #feild .input-field input[type=password]:focus + label {
+                -webkit-transform: translateY(-1rem);
+                transform: translateY(-1rem);
+                font-size: 0.7rem;
+                color: #e1b12c; }
+            #navigation #menue #loginPopup #feild .input-field input[type=text]:valid + label, #navigation #menue #loginPopup #feild .input-field input[type=password]:valid + label {
+              -webkit-transform: translateY(-1rem);
+              transform: translateY(-1rem);
+              font-size: 0.7rem;
+              color: #e1b12c; }
+          #navigation #menue #loginPopup #feild .input-field :-webkit-autofill {
+            -webkit-box-shadow: 0 0 0px 1000px #353b48 inset;
+            -webkit-background-color: #353b48;
+            color: #353b48;
+            -webkit-text-fill-color: #fbc531; }
+            #navigation #menue #loginPopup #feild .input-field :-webkit-autofill + label {
+              -webkit-transform: translateY(-1rem);
+              transform: translateY(-1rem);
+              font-size: 0.7rem;
+              color: #e1b12c; }
+      #navigation #menue #loginPopup #submiting {
+        display: -webkit-flex;
+        display: flex; }
     @media only screen and (max-width: 399px) {
       #navigation #menue {
         display: none; } }
