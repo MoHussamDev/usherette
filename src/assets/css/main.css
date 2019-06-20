@@ -633,3 +633,39 @@ header {
     #login .table1-text .userName input {
       width: 325px;
       height: 47px; }
+
+#signup {
+  margin-top: 5rem;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center; }
+  #signup .center-form .header {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 60px;
+    background: #dcdde1;
+    padding: 0, 1rem, 1rem !important; }
+  #signup .center-form .username {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    background: #dcdde1;
+    height: 50px;
+    padding: 0px; }
+    #signup .center-form .username input {
+      height: 100%;
+      width: 95%;
+      border: 0px;
+      border-radius: 5px;
+      padding-left: 1rem; }
+      #signup .center-form .username input:focus {
+        outline: none; }
+  #signup .center-form .empty {
+    background: #dcdde1;
+    height: 25px; }
