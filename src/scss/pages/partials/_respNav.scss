@@ -1,0 +1,86 @@
+#respNav{
+    display:none;
+    @include mq("phone"){
+        padding-top:3rem;
+        display:flex;
+        position:fixed;
+        flex-direction:column;
+        height:100.1vh;
+        background-color: $blueNight;
+        width:101vw;
+        margin-top:-1px;
+        z-index:10000;
+        transform:translateX(24rem);
+        transition: 0.5s ease-in-out;
+        #innerResp{
+            padding-top:1rem;
+            width:100%;
+            height:40%;
+            // background-color: green;
+            list-style-type: none;
+            display:flex;
+            flex-direction: column;
+            li{
+                display:flex;
+                height:2.8rem;
+                align-items:center;
+                padding:0;
+                margin:0;
+                a{
+                    text-decoration:none;
+                    background-color: $electro;
+                    width:100%;
+                    height:100%;
+                    display:flex;
+                    align-items:center;
+                    padding-left:1rem;
+                    color:$yellow;
+                    border:solid 0.5px $blueNight;
+                    i{
+                        margin-right:1rem;
+                    }
+                }
+            }
+        }
+        #socialBlock{
+            height:60%;
+            display: flex;
+            justify-content: center;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content: center;
+            ul{
+                height:100%;
+                display:flex;
+                align-items: center;
+                justify-content: space-evenly;
+                list-style: none;
+                width:70%;
+                li{
+                    background-color: $electro;
+                    width:2.5rem;
+                    height:2.5rem;
+                    border-radius:100px;
+                    display:flex;
+                    align-items:center;
+                    justify-content: center;
+                    a{
+                        text-decoration: none;
+                        color: $yellow;
+                    }    
+                }
+
+            }
+
+             
+        }
+
+ }
+
+}
+.open{
+    @include mq("phone"){
+    transform:translateX(0) !important;
+    }
+}

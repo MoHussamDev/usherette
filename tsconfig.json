@@ -1,0 +1,12 @@
+{
+    "files": [
+        "src/assets/js/main.ts",
+    ],
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "target": "es5",
+        "allowJs": true,
+        // "allowSyntheticDefaultImports": true
+    }
+    
+}

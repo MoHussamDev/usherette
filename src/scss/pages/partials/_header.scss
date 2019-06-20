@@ -1,0 +1,27 @@
+header{
+    background: linear-gradient(to left bottom, $electroOp, $blueBatOp), url('../../../assets/img/wide.jpg') no-repeat 0 0;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height:80vh;
+    max-height:100vh;
+    #headerWrap{
+        height:40vh;
+        padding-top:9rem;
+        padding-left:3rem;
+        #animatedTxt{
+            height:100%;
+            #subTxt{
+                width:50%;
+                color: $whitesh;
+
+            }
+        }
+
+    }
+    #hireCardWrapper{
+        height:5vh;
+       
+        border-radius: 10px 10px 10px 10px;
+    }
+}

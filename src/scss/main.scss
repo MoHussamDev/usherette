@@ -1,0 +1,27 @@
+// This is the single file output by sass. It is intended to ONLY @import other files.
+
+
+// 1 - TOOLS
+//@import '1-tools/bourbon/bourbon'
+// @import './fontawesome/fontawesome.scss';
+// @import './fontawesome/solid.scss';
+
+@import './tools/fonts';
+@import './tools/normalize';
+@import './tools/vars';
+@import './tools/breakPoints';
+@import './tools/slide';
+
+
+
+// 4 - pages
+@import './pages/example-page-home';
+
+
+// -5 partials 
+@import './pages/partials/navbar';
+@import './pages/partials/header';
+@import './pages/partials/respNav';
+@import './pages/partials/login';
+
+// @import './pages/partials/navigation';

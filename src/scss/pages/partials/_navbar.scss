@@ -1,0 +1,62 @@
+@import './navigation';
+@import './buttonsSec';
+@import '../../tools/breakPoints';
+    #navigation{
+    background-color:$electro;
+    max-height:3rem;
+    height:3rem;
+    position:fixed;  
+    z-index:100000;  
+        #brand{
+            padding:0;
+            margin:0;
+            display:flex;
+            align-items:center;
+            justify-content: center;
+            height:3rem;
+            i{
+                display:none;
+            @include mq("phone"){
+                display:flex;
+                color:white;
+                background-color:$yellow; 
+                height:3rem;
+                align-items:center;
+                padding:0 2rem;
+                margin-right:-1rem;
+                color:$blueNight;
+                
+            }
+            }
+            @include mq("phone"){
+
+            justify-content:space-between;
+            }
+                h1{
+                    color:$yellow;
+                    font-weight:600;
+                    font-size:1.3rem;
+                    margin:0;
+                    padding:0;
+                    letter-spacing:1.5px;
+                    font-smooth: 0.5rem;
+                    @include mq("phone"){
+                        font-size:1rem;
+                 }
+                }
+            }
+            #menue{     
+                display:flex;
+                justify-content:flex-end;
+                align-items:center;
+                height:3rem;
+                @include navigate;
+                @include buttonsSec;
+                @include mq("phone"){
+                       display:none;
+                }
+                @include mq("phone-wide"){
+                       display:none;
+                }
+            }
+    }
