@@ -14,7 +14,10 @@
           font-weight:600;
           font-size:0.7rem;
           text-transform: uppercase;
-          letter-spacing:1.5px;
+          letter-spacing:1px;
+          &:hover{
+            color:$yellow;
+          }
           i{
             margin-right:0.5rem;
             color:$yellowShade;

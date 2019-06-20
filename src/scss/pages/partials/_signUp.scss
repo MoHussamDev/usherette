@@ -1,0 +1,36 @@
+#signup {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  .center-form {
+    .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60px;
+      background: $darkeWhitesh;
+      padding: 0, 1rem, 1rem !important;
+    }
+    .username {
+      display: flex;
+      justify-content: center;
+      background: $darkeWhitesh;
+      height: 50px;
+      padding: 0px;
+      input {
+        height: 100%;
+        width: 95%;
+        border: 0px;
+        border-radius: 5px;
+        padding-left: 1rem;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    .empty {
+      background: $darkeWhitesh;
+      height: 25px;
+    }
+  }
+}
