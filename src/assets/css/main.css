@@ -568,7 +568,7 @@ header {
   margin: auto;
   width: 615px;
   box-shadow: 0 1px 6px rgba(57, 73, 76, 0.35);
-  padding: 80px 40px;
+  padding-top: 25px;
   margin-top: 50px;
   text-align: center; }
   #login .table1-text .text1 {
@@ -577,13 +577,21 @@ header {
     #login .table1-text .text1 h1 {
       font-size: 38px; }
   #login .table1-text .userName {
-    padding-top: 25px; }
+    padding-bottom: 25px; }
     #login .table1-text .userName input {
       width: 380px;
       height: 47px; }
   #login .table1-text .conTinue {
-    padding-top: 35px; }
+    padding-bottom: 35px; }
     #login .table1-text .conTinue input {
       width: 275px;
       height: 47px;
       border-radius: 2px; }
+
+#logFotter .table2-foot {
+  background-color: rgba(85, 85, 85, 0.808);
+  width: 615px;
+  margin: auto;
+  text-align: center; }
+  #logFotter .table2-foot .text2 {
+    padding-top: 25px; }
