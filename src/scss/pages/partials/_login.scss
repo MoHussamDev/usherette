@@ -1,5 +1,6 @@
 #login{
     .table1-text{
+        background-color: white;
         margin: auto;
         width: 615px;
         box-shadow: 0 1px 6px rgba(57,73,76,0.35);
@@ -11,20 +12,36 @@
             padding: 0%;
             margin: 0%;
              h1{
-                 width: 420px;
+                font-size: 38px;
              }
         }        
         
          .userName{
              padding-top: 25px;
              input{
-                width: 325px;
+                width: 380px;
                 height: 47px;
 
              }
             
 
         }
+
+        .conTinue{
+             padding-top: 35px;
+             input{
+                width: 275px;
+                height: 47px;
+                border-radius: 2px;
+                
+
+
+        }
         
       }
     }
+}
+
+#logFotter{
+    
+}

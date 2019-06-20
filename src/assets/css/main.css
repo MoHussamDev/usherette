@@ -523,6 +523,7 @@ header {
     transform: translateX(0) !important; } }
 
 #login .table1-text {
+  background-color: white;
   margin: auto;
   width: 615px;
   box-shadow: 0 1px 6px rgba(57, 73, 76, 0.35);
@@ -533,9 +534,15 @@ header {
     padding: 0%;
     margin: 0%; }
     #login .table1-text .text1 h1 {
-      width: 420px; }
+      font-size: 38px; }
   #login .table1-text .userName {
     padding-top: 25px; }
     #login .table1-text .userName input {
-      width: 325px;
+      width: 380px;
       height: 47px; }
+  #login .table1-text .conTinue {
+    padding-top: 35px; }
+    #login .table1-text .conTinue input {
+      width: 275px;
+      height: 47px;
+      border-radius: 2px; }
