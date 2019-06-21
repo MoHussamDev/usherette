@@ -1,0 +1,81 @@
+@mixin loginPopup{
+    .loginPopOn{
+        visibility: visible !important;
+        opacity:1 !important;
+        transform:translateX(0) !important;
+    }
+    #loginPopup{
+        visibility: hidden;
+        padding-left:1rem;
+        padding-right:1rem;
+        position:absolute;
+        z-index:110000;
+        top:3rem;
+        right:31%;
+        width:22rem;
+        height:20rem;
+        background-color: $blueNight;
+        padding-top:1rem;
+        display:flex;
+        flex-direction:column;
+        padding-right:1rem;
+        opacity:0;
+        transform:translateX(5rem);
+        transition:0.3s ease;
+        @include mq("phone"){
+            display:none;
+        }
+        @include mq("desktop"){
+            top:5vh;
+            right:37%;
+        }
+        #closeButton{
+            color: $electro;
+            font-size:1rem;
+            font-weight:600;
+            position:absolute;
+            left:-25px;
+            background-color: $yellow;
+            width:2rem;
+            height:2rem;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            cursor:pointer;
+            border-radius:3px;
+
+        }
+        #feild{
+            width:100%;
+            height:4rem;
+            margin-bottom:1rem;
+            @include inputFeild;
+        }
+        #forgetPassword{
+            padding-left:1rem;
+            height:4rem;
+            font-size:0.8rem;
+            a{
+
+                 color:$yellow;
+            }
+
+        }
+        #submiting{
+            display:flex;
+            height:3rem;
+            align-items: flex-end;
+            justify-content: space-between;
+            #rememPass{
+                padding-left:1rem; 
+                @include styledCheck;
+            }
+            input[type=submit]{
+                margin-bottom:0.4rem;
+                @include buttonYellow
+            }
+
+        }
+    }
+
+}

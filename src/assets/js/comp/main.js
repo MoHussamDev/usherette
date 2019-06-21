@@ -1,7 +1,9 @@
 "use strict";
 
+//Menue Sliding 
 var respNav = $('#respNav');
 var menueDetect = false;
+var loPopUpDet = false;
 $('#toggler').on('click', function () {
   if (!menueDetect) {
     menueDetect = true;
@@ -12,7 +14,22 @@ $('#toggler').on('click', function () {
   menueDetect = false;
   console.log(menueDetect);
   return respNav.removeClass('open');
+}); //login PopUp
+
+$('#closeButton').on('click', function () {
+  if (loPopUpDet) {
+    $('#loginPopup').removeClass('loginPopOn');
+    loPopUpDet = false;
+  }
 });
+$("[data-login='true']").on('click', function () {
+  if (!loPopUpDet) {
+    console.log('clicked');
+    $('#loginPopup').addClass('loginPopOn');
+    loPopUpDet = true;
+  }
+}); //the Slide Effect 
+
 jQuery(document).ready(function ($) {
   // set animation timing
   var animationDelay = 2500,

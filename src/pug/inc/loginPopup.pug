@@ -1,0 +1,18 @@
+#loginPopup
+    #closeButton X
+    form(autocomplete="nope")
+        #feild
+            .input-field 
+                input(type="text", autocomplete="nope",required ,name="username")
+                label Mobile No. Or Email
+        #feild
+            .input-field 
+                input(type="password",autocomplete="nope",required,name="password")
+                label Password
+        #forgetPassword
+            a(href="#") Forget my password        
+        #submiting
+            #rememPass
+                input(type="checkbox").styled-checkbox#remem
+                label(for="remem") Remember Password
+            input(type="submit", value="login")   
