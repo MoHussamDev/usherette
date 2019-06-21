@@ -1,8 +1,11 @@
 @mixin loginPopup{
     .loginPopOn{
-        display:flex !important;
+        visibility: visible !important;
+        opacity:1 !important;
+        transform:translateX(0) !important;
     }
     #loginPopup{
+        visibility: hidden;
         padding-left:1rem;
         padding-right:1rem;
         position:absolute;
@@ -13,9 +16,12 @@
         height:20rem;
         background-color: $blueNight;
         padding-top:1rem;
-        display:none;
+        display:flex;
         flex-direction:column;
         padding-right:1rem;
+        opacity:0;
+        transform:translateX(5rem);
+        transition:0.3s ease;
         @include mq("phone"){
             display:none;
         }
@@ -25,7 +31,7 @@
         }
         #closeButton{
             color: $electro;
-            font-size:1.5rem;
+            font-size:1rem;
             font-weight:600;
             position:absolute;
             left:-25px;
@@ -36,6 +42,7 @@
             align-items:center;
             justify-content:center;
             cursor:pointer;
+            border-radius:3px;
 
         }
         #feild{

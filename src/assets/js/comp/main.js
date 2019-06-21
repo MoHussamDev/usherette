@@ -17,7 +17,10 @@ $('#toggler').on('click', function () {
 }); //login PopUp
 
 $('#closeButton').on('click', function () {
-  console.log('clicked');
+  if (loPopUpDet) {
+    $('#loginPopup').removeClass('loginPopOn');
+    loPopUpDet = false;
+  }
 });
 $("[data-login='true']").on('click', function () {
   if (!loPopUpDet) {

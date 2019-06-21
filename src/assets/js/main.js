@@ -22,14 +22,17 @@ $('#toggler').on('click',()=>{
 //login PopUp
 
 $('#closeButton').on('click',()=>{
-  console.log('clicked');
+  if(loPopUpDet){
+    $('#loginPopup').removeClass('loginPopOn');
+    loPopUpDet = false;
+  }
  
 });
 $("[data-login='true']").on('click',()=>{
   if(!loPopUpDet){
     console.log('clicked')
     $('#loginPopup').addClass('loginPopOn');
-    loPopUpDet =true;
+    loPopUpDet = true;
   }
 
 })

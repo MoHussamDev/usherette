@@ -479,7 +479,8 @@ body {
         -ms-flex-align: center;
         align-items: center;
         padding-left: 1rem;
-        padding-right: 1rem; }
+        padding-right: 1rem;
+        cursor: pointer; }
         #navigation #menue #navigate li a {
           font-family: 'Hind';
           color: #f5f6fa;
@@ -564,12 +565,15 @@ body {
         #navigation #menue #buttonSec #hireUsher:hover {
           background-color: #4b8cc8; }
     #navigation #menue .loginPopOn {
-      display: -webkit-box !important;
-      display: -webkit-flex !important;
-      display: -moz-box !important;
-      display: -ms-flexbox !important;
-      display: flex !important; }
+      visibility: visible !important;
+      opacity: 1 !important;
+      -webkit-transform: translateX(0) !important;
+      -moz-transform: translateX(0) !important;
+      -ms-transform: translateX(0) !important;
+      -o-transform: translateX(0) !important;
+      transform: translateX(0) !important; }
     #navigation #menue #loginPopup {
+      visibility: hidden;
       padding-left: 1rem;
       padding-right: 1rem;
       position: absolute;
@@ -580,7 +584,11 @@ body {
       height: 20rem;
       background-color: #353b48;
       padding-top: 1rem;
-      display: none;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -webkit-flex-direction: column;
@@ -588,7 +596,17 @@ body {
       -moz-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
-      padding-right: 1rem; }
+      padding-right: 1rem;
+      opacity: 0;
+      -webkit-transform: translateX(5rem);
+      -moz-transform: translateX(5rem);
+      -ms-transform: translateX(5rem);
+      -o-transform: translateX(5rem);
+      transform: translateX(5rem);
+      -webkit-transition: 0.3s ease;
+      -o-transition: 0.3s ease;
+      -moz-transition: 0.3s ease;
+      transition: 0.3s ease; }
       @media only screen and (max-width: 399px) {
         #navigation #menue #loginPopup {
           display: none; } }
@@ -598,7 +616,7 @@ body {
           right: 37%; } }
       #navigation #menue #loginPopup #closeButton {
         color: #2f3640;
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-weight: 600;
         position: absolute;
         left: -25px;
@@ -620,7 +638,10 @@ body {
         -moz-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
-        cursor: pointer; }
+        cursor: pointer;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px; }
       #navigation #menue #loginPopup #feild {
         width: 100%;
         height: 4rem;
