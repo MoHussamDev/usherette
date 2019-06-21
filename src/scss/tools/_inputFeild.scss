@@ -6,16 +6,17 @@
     margin-bottom: 1rem;
     box-sizing: border-box;
     padding: 0 .75rem;
+    padding-bottom:0; 
     min-height: 1px;
     width: 100%;
     label {
       color: $yellow;
       font-size:0.9rem;
       font-weight: 400;
-      cursor: pointer;
+      cursor: text;
       text-transform: uppercase;
       vertical-align: middle;
-      transform: translateY(0.5rem);
+      transform: translateY(0rem);
       letter-spacing:2px;
       transition: all .2s ease-out;
       left: .75rem;
@@ -59,71 +60,108 @@
       }
     
     }
-    :-webkit-autofill {
-      -webkit-box-shadow: 0 0 0px 1000px $blueNight inset;
-      -webkit-background-color: $blueNight;
-      color:$blueNight;
-      -webkit-text-fill-color:$yellow; 
-      
-      + label {
-        transform: translateY(-1rem);
-        font-size:0.7rem;
-        color:$yellowShade;
-      }
-    }
+
   
   }
-
+  :-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px $blueNight inset;
+    -webkit-background-color: $blueNight;
+    color:$blueNight;
+    -webkit-text-fill-color:$yellow; 
+    
+    + label {
+      transform: translateY(-1rem);
+      font-size:0.7rem;
+      color:$yellowShade;
+    }
+  }
 }
 
-//     input {
-//       &:focus:valid {
-//         + label {
-//           color: #009688;
-//           transform: translateY(-2rem);
-//         }
-//         border-bottom: 1px solid #009688;
-//         box-shadow: 0 1px 0 0 #009688;
-//       }
-//       &:valid {
-//         + label {
-//           color: #14a0d2;
-//           transform: translateY(-2rem);
-//         }
-//         border-bottom: 1px solid #14a0d2;
-//         box-shadow: 0 1px 0 0 #14a0d2;
-//       }
-//       &:disabled {
-//         border-bottom: 1px solid #616161;
-//         box-shadow: 0 1px 0 0 #616161;
-//         background-color: transparent;
-//       }
-//       &[value=""]:disabled + label {
-//         color: #616161;
-//         transform: translateY(0rem);
-//         background-color: #fafafa;
-//       }
-//       &:not([value=""]):disabled + label {
-//         color: #616161;
-//         transform: translateY(-2rem);
-//         background-color: #fafafa;
-//       }
-//       &[value=""]:valid {
-//         + label {
-//           color: #14a0d2;
-//           transform: translateY(0rem);
-//         }
-//         border-bottom: 1px solid #14a0d2;
-//         box-shadow: 0 1px 0 0 #14a0d2;
-//       }
-//       &:not([value=""]):valid {
-//         + label {
-//           color: #14a0d2;
-//           transform: translateY(-2rem);
-//         }
-//         border-bottom: 1px solid #14a0d2;
-//         box-shadow: 0 1px 0 0 #14a0d2;
-//       }
-//     }
-//   }
-// }
+@mixin styledCheck{
+  .styled-checkbox {
+    position: absolute; // take it out of document flow
+    opacity: 0; // hide it
+  
+    & + label {
+      font-family: 'Hind';
+      position: relative;
+      cursor: pointer;
+      padding: 0;
+      color:$yellow;
+      // font-weight: 
+    }
+  
+    // Box.
+    & + label:before {
+      content: '';
+      margin-right: 10px;
+      display: inline-block;
+      vertical-align: text-top;
+      width: 20px;
+      height: 20px;
+      background: $electro;
+      border:1px solid $yellow;
+    }
+  
+    // Box hover
+    &:hover + label:before {
+      background: $yellow;
+    }
+    
+    // Box focus
+    &:focus + label:before {
+      box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+    }
+  
+    // Box checked
+    &:checked + label:before {
+      background: $yellow;
+    }
+    
+    // Disabled state label.
+    &:disabled + label {
+      color: #b8b8b8;
+      cursor: auto;
+    }
+  
+    // Disabled box.
+    &:disabled + label:before {
+      box-shadow: none;
+      background: #ddd;
+    }
+  
+    // Checkmark. Could be replaced with an image
+    &:checked + label:after {
+      content: '';
+      position: absolute;
+      left: 5px;
+      top: 9px;
+      background: $electro;
+      width: 2px;
+      height: 2px;
+      box-shadow: 
+        2px 0 0 $electro,
+        4px 0 0 $electro,
+        4px -2px 0 $electro,
+        4px -4px 0 $electro,
+        4px -6px 0 $electro,
+        4px -8px 0 $electro;
+      transform: rotate(45deg);
+    }
+  }
+  
+}
+
+@mixin buttonYellow{
+  background-color: $yellowShade;
+  border:none;
+  height:2rem;
+  padding-left:1.5rem;
+  padding-right:1.5rem;
+  transition:0.2s ease;
+  font-family:"hind";
+  font-weight:600;
+  &:hoveR{
+    background-color: $yellow;
+  }
+}
