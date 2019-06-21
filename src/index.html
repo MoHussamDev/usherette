@@ -5,8 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="assets/img/favicons/favicon.ico" rel="shortcut icon">
-    <link href="./assets/css/bootstrap.css" rel="stylesheet">
-    <link href="./assets/css/main.css" rel="stylesheet">
+    <link href="./assets/css/ano.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
@@ -21,10 +20,11 @@
               <li><a href="#"> <i class="fa fa-cogs"></i><span>How it works </span></a></li>
               <li data-login="true"><a href="#"> <i class="fa fa-sign-in"></i><span>logIn </span></a></li>
             </ul>
-            <div id="buttonSec"> <a href="#" id="joinUs">Join Us </a><a href="#" id="hireUsher">Hire Usher</a></div>
+            <div id="buttonSec"> <a href="#" id="joinUs">Join Us </a><a href="/login.html" id="hireUsher">Hire Usher</a></div>
             <div id="loginPopup">
               <div id="closeButton">X</div>
-              <form autocomplete="nope">
+              <div id="msg"></div>
+              <form autocomplete="nope" id="loginPopForm">
                 <div id="feild">
                   <div class="input-field"> 
                     <input type="text" autocomplete="nope" required name="username">
@@ -89,6 +89,8 @@
       </div>
     </header>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="./assets/js/comp/main.js" type="text/javascript"></script>
+    <script src="./assets/compjs/main.js" type="text/javascript"></script>
+    <script src="./assets/js/comp/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="./assets/compjs/valid.js" type="text/javascript"></script>
   </body>
 </html>

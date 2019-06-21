@@ -37,7 +37,7 @@ gulp.task('pug', () => {
 
 // Compile Sass & Inject Into Browser
 gulp.task('scss', () => {
-    return gulp.src(['./src/scss/*','./src/scss/**/_*','node_modules/bootstrap/scss/bootstrap.scss'])
+    return gulp.src(['./src/scss/*','./src/scss/**/_*','node_modules/bootstrap/scss/bootstrap-grid.scss','node_modules/bootstrap/scss/bootstrap-reboot.scss'])
         .pipe(plumber(
             {
                 errorHandler: function(err) {
@@ -51,12 +51,13 @@ gulp.task('scss', () => {
         .pipe(autoprefixer({
             cascade: false
         }))
+        .pipe(concat('ano.css'))
         .pipe(gulp.dest("src/assets/css"))
         .pipe(browserSync.stream());
 });
 
 gulp.task("babel", function () {
-    return gulp.src('src/assets/js/main.js')
+    return gulp.src(['src/assets/js/main.js','src/assets/js/valid.js'])
         .pipe(plumber(
             {
                 errorHandler: function(err) {
@@ -69,7 +70,7 @@ gulp.task("babel", function () {
         .pipe(babel({
             presets: ['@babel/env']
         }))
-        .pipe(gulp.dest("src/assets/js/comp"));
+        .pipe(gulp.dest("src/assets/compjs"));
 });
 
 // Watch Sass, Pug & Serve
@@ -147,7 +148,11 @@ gulp.task('build', ['imageMin', 'scripts', 'copyHtml', 'copyCSS','copyfonts']);
 gulp.task('clean', () => {
   console.log('-> Cleaning dist folder')
   del([
-    'dist'
+    'dist',
+    'src/assets/css/ano.css',
+    'src/assets/compJs',
+    'src/*.html'
+
   ]);
 });
 

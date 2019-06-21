@@ -1,59 +1,10 @@
 #login{
-    padding-top: 120px;
-    .table1-text{
-        background-color: white;
-        margin: auto;
-        width: 615px;
-        box-shadow: 0 1px 6px rgba(57,73,76,0.35);
-        padding-top: 25px;
-        margin-top: 50px;
-        text-align: center;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-        .text1{
-            padding: 0%;
-            margin: 0%;
-             h1{
-                font-size: 30px;
-             }
-        }        
+    padding-top:13rem;
+    #loginCard{
+        height:26rem;
+        background-color: $whitesh;
         
-         .userName{
-             padding-bottom: 25px;
-             input{
-                width: 380px;
-                height: 47px;
-
-             }          
-
-        }
-        .conTinue{
-             padding-bottom: 35px;
-             input{
-                width: 275px;
-                height: 47px;
-                border-radius: 2px;
-                
-        }
-        
-      }
+        box-shadow:$shadowBox;
     }
 }
 
-#logFotter{
-    .table2-foot{
-        background-color:rgba(85, 85, 85, 0.808);
-        box-shadow: 0 1px 6px rgba(57,73,76,0.35);
-        width: 615px;
-        margin: auto;
-        text-align: center;
-        .text2{
-            padding-top:25px;
-        }
-        .signUp{
-            padding: 25px;
-            padding-bottom: 30px;
-        }
-    }
-    
-}
