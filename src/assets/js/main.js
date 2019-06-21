@@ -1,6 +1,8 @@
+//Menue Sliding 
 const respNav = $('#respNav')
 
-let menueDetect = false
+let menueDetect = false;
+let loPopUpDet = false;
 $('#toggler').on('click',()=>{
     
     if(!menueDetect){
@@ -17,6 +19,29 @@ $('#toggler').on('click',()=>{
 })
 
 
+//login PopUp
+
+$('#closeButton').on('click',()=>{
+  console.log('clicked');
+ 
+});
+$("[data-login='true']").on('click',()=>{
+  if(!loPopUpDet){
+    console.log('clicked')
+    $('#loginPopup').addClass('loginPopOn');
+    loPopUpDet =true;
+  }
+
+})
+
+
+
+
+
+
+
+
+//the Slide Effect 
 
 jQuery(document).ready(function($) {
 

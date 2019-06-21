@@ -563,6 +563,12 @@ body {
         transition: 0.2s ease; }
         #navigation #menue #buttonSec #hireUsher:hover {
           background-color: #4b8cc8; }
+    #navigation #menue .loginPopOn {
+      display: -webkit-box !important;
+      display: -webkit-flex !important;
+      display: -moz-box !important;
+      display: -ms-flexbox !important;
+      display: flex !important; }
     #navigation #menue #loginPopup {
       padding-left: 1rem;
       padding-right: 1rem;
@@ -574,11 +580,7 @@ body {
       height: 20rem;
       background-color: #353b48;
       padding-top: 1rem;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: flex;
+      display: none;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -webkit-flex-direction: column;
@@ -594,6 +596,31 @@ body {
         #navigation #menue #loginPopup {
           top: 5vh;
           right: 37%; } }
+      #navigation #menue #loginPopup #closeButton {
+        color: #2f3640;
+        font-size: 1.5rem;
+        font-weight: 600;
+        position: absolute;
+        left: -25px;
+        background-color: #fbc531;
+        width: 2rem;
+        height: 2rem;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        cursor: pointer; }
       #navigation #menue #loginPopup #feild {
         width: 100%;
         height: 4rem;
