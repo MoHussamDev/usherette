@@ -616,38 +616,45 @@ header {
     -webkit-transform: translateX(0) !important;
     transform: translateX(0) !important; } }
 
-#login .table1-text {
-  background-color: white;
-  margin: auto;
-  width: 615px;
-  box-shadow: 0 1px 6px rgba(57, 73, 76, 0.35);
-  padding-top: 25px;
-  margin-top: 50px;
-  text-align: center; }
-  #login .table1-text .text1 {
-    padding: 0%;
-    margin: 0%; }
-    #login .table1-text .text1 h1 {
-      font-size: 38px; }
-  #login .table1-text .userName {
-    padding-bottom: 25px; }
-    #login .table1-text .userName input {
-      width: 380px;
-      height: 47px; }
-  #login .table1-text .conTinue {
-    padding-bottom: 35px; }
-    #login .table1-text .conTinue input {
-      width: 275px;
-      height: 47px;
-      border-radius: 2px; }
+#login {
+  padding-top: 120px; }
+  #login .table1-text {
+    background-color: white;
+    margin: auto;
+    width: 615px;
+    box-shadow: 0 1px 6px rgba(57, 73, 76, 0.35);
+    padding-top: 25px;
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+    #login .table1-text .text1 {
+      padding: 0%;
+      margin: 0%; }
+      #login .table1-text .text1 h1 {
+        font-size: 30px; }
+    #login .table1-text .userName {
+      padding-bottom: 25px; }
+      #login .table1-text .userName input {
+        width: 380px;
+        height: 47px; }
+    #login .table1-text .conTinue {
+      padding-bottom: 35px; }
+      #login .table1-text .conTinue input {
+        width: 275px;
+        height: 47px;
+        border-radius: 2px; }
 
 #logFotter .table2-foot {
   background-color: rgba(85, 85, 85, 0.808);
+  box-shadow: 0 1px 6px rgba(57, 73, 76, 0.35);
   width: 615px;
   margin: auto;
   text-align: center; }
   #logFotter .table2-foot .text2 {
     padding-top: 25px; }
+  #logFotter .table2-foot .signUp {
+    padding: 25px;
+    padding-bottom: 30px; }
 
 #signup {
   margin-top: 5rem;
