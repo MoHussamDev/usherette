@@ -19,12 +19,14 @@ $('#toggler').on('click', function () {
 $('#closeButton').on('click', function () {
   if (loPopUpDet) {
     $('#loginPopup').removeClass('loginPopOn');
+    $("[data-login='true']").removeClass('act');
     loPopUpDet = false;
   }
 });
 $("[data-login='true']").on('click', function () {
   if (!loPopUpDet) {
     console.log('clicked');
+    $("[data-login='true']").addClass('act');
     $('#loginPopup').addClass('loginPopOn');
     loPopUpDet = true;
   }

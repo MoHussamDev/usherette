@@ -24,13 +24,15 @@ $('#toggler').on('click',()=>{
 $('#closeButton').on('click',()=>{
   if(loPopUpDet){
     $('#loginPopup').removeClass('loginPopOn');
+    $("[data-login='true']").removeClass('act')
     loPopUpDet = false;
   }
- 
+  
 });
 $("[data-login='true']").on('click',()=>{
   if(!loPopUpDet){
     console.log('clicked')
+    $("[data-login='true']").addClass('act')
     $('#loginPopup').addClass('loginPopOn');
     loPopUpDet = true;
   }
