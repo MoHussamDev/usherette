@@ -650,6 +650,13 @@ header {
     height: 60px;
     background: #dcdde1;
     padding: 0, 1rem, 1rem !important; }
+  #signup .center-form .group-input {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-evenly;
+    justify-content: space-evenly;
+    width: 100%;
+    background: #dcdde1; }
   #signup .center-form .username {
     display: -webkit-flex;
     display: flex;
