@@ -1,30 +1,10 @@
 #login{
-    .table1-text{
-        margin: auto;
-        width: 615px;
-        box-shadow: 0 1px 6px rgba(57,73,76,0.35);
-        padding: 80px 40px;
-        margin-top: 50px;
-        text-align: center;
-
-        .text1{
-            padding: 0%;
-            margin: 0%;
-             h1{
-                 width: 420px;
-             }
-        }        
+    padding-top:13rem;
+    #loginCard{
+        height:26rem;
+        background-color: $whitesh;
         
-         .userName{
-             padding-top: 25px;
-             input{
-                width: 325px;
-                height: 47px;
-
-             }
-            
-
-        }
-        
-      }
+        box-shadow:$shadowBox;
     }
+}
+

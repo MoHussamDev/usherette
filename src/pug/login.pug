@@ -1,13 +1,3 @@
-extends layout/layout
+extends layout/loginLayout
 block content 
-
-   section#login.container-fluid
-      .container
-         .table1-text
-            .text1
-               h1 Log in & Get to work
-            .userName
-               input(type='text' name='userormail' placeholder='Mobile No. or Email')
-               br
-            .conTinue      
-               input(type='submit' name='continue' value='Continue')
+      include partials/loginCard

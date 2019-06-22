@@ -1,6 +1,7 @@
 @import './navigation';
 @import './buttonsSec';
-@import '../../tools/breakPoints';
+@import './pages/partials/loginPopup';
+
     #navigation{
     background-color:$electro;
     max-height:3rem;
@@ -53,6 +54,7 @@
                 height:3rem;
                 @include navigate;
                 @include buttonsSec;
+                @include loginPopup;
                 @include mq("phone"){
                        display:none;
                 }

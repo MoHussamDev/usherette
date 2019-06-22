@@ -31,6 +31,7 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "browser-sync-reuse-tab": "^1.0.3",
+    "bulma": "^0.7.5",
     "gulp-nodemon": "^2.4.2",
     "gulp-notify": "^3.2.0",
     "gulp-wait": "0.0.2",
@@ -39,10 +40,12 @@
     "ts-query": "0.0.6"
   },
   "browserslist": [
-    "Last 5 versions",
-    "> 1%",
-    "iOS 8",
-    "maintained node versions",
-    "not dead"
+    "defaults",
+    "cover 99.5%",
+    "cover 99.5% in US",
+    "ie 6-8",
+    "dead",
+    "Edge 17",
+    "Edge 18"
   ]
 }
