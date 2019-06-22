@@ -1,10 +1,20 @@
+@import '../../tools/oneInputForm';
 #login{
     padding-top:13rem;
     #loginCard{
         height:26rem;
         background-color: $whitesh;
-        
         box-shadow:$shadowBox;
+        #leftSide{
+            width:100%;
+            height:26rem;
+            padding-left:2rem;
+            padding-top:3rem;
+            form{
+                width:20rem;
+                @include inputWithIcon;
+            }
+        }
     }
 }
 

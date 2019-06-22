@@ -1,9 +1,15 @@
+include ../inc/oneInputMixin
 section#login.container-fluid
        .container
             #loginCard
                 .row
                     .col-12.col-md-6
-                        h1 any data 
+                        #leftSide
+                            #title
+                                h1 logIn 
+                            form
+                                +inputOne('text','provide Mobile No.')(class="fa fa-user")
+                                +inputOne('password','Your Password')(class="fa fa-plus")
                     .col-12.col-md-6
                         h2 data 
                 

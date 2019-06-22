@@ -31,7 +31,6 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "browser-sync-reuse-tab": "^1.0.3",
-    "bulma": "^0.7.5",
     "gulp-nodemon": "^2.4.2",
     "gulp-notify": "^3.2.0",
     "gulp-wait": "0.0.2",

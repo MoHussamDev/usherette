@@ -37,7 +37,11 @@ gulp.task('pug', () => {
 
 // Compile Sass & Inject Into Browser
 gulp.task('scss', () => {
-    return gulp.src(['./src/scss/*','./src/scss/**/_*','node_modules/bootstrap/scss/bootstrap-grid.scss','node_modules/bootstrap/scss/bootstrap-reboot.scss'])
+    return gulp.src(['./src/scss/*',
+                     './src/scss/**/_*',
+                     'node_modules/bootstrap/scss/bootstrap-grid.scss',
+                     'node_modules/bootstrap/scss/bootstrap-reboot.scss'
+                    ])
         .pipe(plumber(
             {
                 errorHandler: function(err) {
@@ -149,7 +153,7 @@ gulp.task('clean', () => {
   console.log('-> Cleaning dist folder')
   del([
     'dist',
-    'src/assets/css/ano.css',
+    'src/assets/css',
     'src/assets/compJs',
     'src/*.html'
 

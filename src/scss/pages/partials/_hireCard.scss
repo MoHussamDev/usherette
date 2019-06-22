@@ -79,14 +79,17 @@
           display:flex;
           align-items:center;
           padding:1rem;
+          
           // background-color: red;
               h6{
                margin:0;
                padding:0;
+               font-size:1rem;
+               text-transform:capitalize;
               }
               @include mq("phone"){
-            display:none
-               }
+               display:none
+                    }
          }
      
 
