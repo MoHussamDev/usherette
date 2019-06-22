@@ -1,7 +1,11 @@
 @import '../../tools/oneInputForm';
 #login{
-    padding-top:13rem;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    height:auto;
     #loginCard{
+        margin-top:20vh;
         position: relative;
         height:26rem;
         background-color: $whitesh;
