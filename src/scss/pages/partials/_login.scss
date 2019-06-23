@@ -1,10 +1,10 @@
 @import '../../tools/oneInputForm';
-#login{
+#register{
     display:flex;
     align-items:center;
     justify-content: center;
     height:auto;
-    #loginCard{
+    #registerCard{
         margin-top:20vh;
         height:auto;
         background-color: $whitesh;
