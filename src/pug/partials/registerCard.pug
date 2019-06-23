@@ -1,9 +1,7 @@
 include ../inc/oneInputMixin
 section#register.container-fluid
        .container
-            #registerCard
-                .row
-                    .col.col-md-6
+            #registerCard              
                         #leftSide
                             #title
                                 h1 Sign up
@@ -14,10 +12,10 @@ section#register.container-fluid
                                     .col-12.col-md-6
                                         +inputOne('text','LastName')(class="fa fa-user-plus")
                                 +inputOne('text',' phone')(class="fa fa-phone")
-                                +inputOne('text','email address')(class="fa fa-envelope")
                                 +inputOne('password','password')(class="fa fa-lock")
                                 +inputOne('password','retype Password')(class="fa fa-lock")
+                                +inputOne('text','email address')(class="fa fa-envelope")
                                 +inputOne('text','Company')(class="fa fa-building")
                                 input(type="submit")
-                    .col.col-md-6
-                            h1 data                
+                        #rightSide
+                                //- h1 any else               
