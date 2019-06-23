@@ -2,11 +2,16 @@
     .input-with-icon{
         display: flex;
         height: 35px;
-        width: 100%;
+        // width: 100%;
+        max-width: 100%;
         margin-bottom: 20px;
         border: 1px solid #999999;
+        @include mq('phone'){
+            width:15rem;
+        }
         input[type=text],input[type=password]{
             padding-left:10px;
+            max-width: 100%;
             width: 100%;
             border: 0;
             &:focus{
@@ -14,13 +19,16 @@
             }
         }
         .icon-container{
-            color:#999999;
+            color:$yellowShade;
+            max-width: 35px;
             width: 35px;
+            min-width: 35px;
             height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            border-right: 1px solid #999999;
+            background-color: $electro;
+            border-right: 1px solid $electro;
           }
       }
       

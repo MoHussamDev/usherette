@@ -3,25 +3,21 @@ section#login.container-fluid
        .container
             #loginCard
                 .row
-                    .col-12.col-md-6
-                        
+                    .col.col-md-6
                         #leftSide
                             #title
-                                h1 Login
+                                h1 Sign up
                             form
-                                .col-12.col-md-12.group-input
-                                    +inputOne('text','firstName')(class="fa fa-user")
-                                    +inputOne('text','LastName')(class="fa fa-user-plus")
+                                .row
+                                    .col-12.col-md-6
+                                        +inputOne('text','firstName')(class="fa fa-user")
+                                    .col-12.col-md-6
+                                        +inputOne('text','LastName')(class="fa fa-user-plus")
                                 +inputOne('text',' phone')(class="fa fa-phone")
                                 +inputOne('text','email address')(class="fa fa-envelope")
                                 +inputOne('password','password')(class="fa fa-lock")
+                                +inputOne('password','retype Password')(class="fa fa-lock")
+                                +inputOne('text','Company')(class="fa fa-building")
                                 input(type="submit")
-                    .col-12.col-md-6
-                        #rightSide
-                            #title
-                                h1 Or login with
-                            form
-                                .col-12.col-md-12
-                                    
-
-                
+                    .col.col-md-6
+                            h1 data                

@@ -6,25 +6,57 @@
     height:auto;
     #loginCard{
         margin-top:20vh;
-        position: relative;
-        height:26rem;
+        height:auto;
         background-color: $whitesh;
         box-shadow:$shadowBox;
+        width:100%;
+        padding-bottom:5rem !important;
+        @include mq('phone'){
+            height:auto !important;
+            margin-bottom:5rem !important;
+        }
+        #title{
+            padding-left:2rem;
+            padding-bottom:1rem;
+        }
+        &:after{
+            content:'';
+            position:relative;
+            top:5rem;
+            left:0;
+            background-color: $electro;
+            padding-right:100%;
+            padding-left:0;
+            padding-top:0;
+            box-sizing:border-box;
+            padding-top:-0.9rem;
+
+            
+        }
         #leftSide{
+            
             width:100%;
             height:26rem;
-            padding-left:2rem;
             padding-top:3rem;
+
             form{
-                width:20rem;
-                @include inputWithIcon;
-                .group-input{
-                    display: flex;
-                    padding: 0;
-                }
+                padding-left:2rem;
+                padding-right:2rem;
+                width:100%;
+                display:flex;
+                flex-wrap:wrap;
+                flex-direction:column;
                 input[type="submit"]{
-                    width: 100%;
+                    // max-width: 100%;
+                    width:8rem;
+                    background-color: $electro;
+                    color:$whitesh;
+                    font-weight:600;
+                    border:0;
+                    height:2rem;
+                    align-self:flex-end;
                 }
+                @include inputWithIcon;
 
             }
         }
