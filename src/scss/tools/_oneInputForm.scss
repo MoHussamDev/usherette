@@ -18,6 +18,30 @@
                 outline:none;
             }
         }
+        select{
+            width: 100%;
+            border-width:0 !important;
+            &:focus{
+                outline:none;
+            }  
+            option{
+                // background: $yellow;
+                &:hover{
+                    outline:none;
+                }
+                
+            }
+       
+        }
+        input[type=date]{
+            padding-left:10px;
+            max-width: 100%;
+            width: 100%;
+            border: 0;
+            &:focus{
+                outline:none;
+            }
+        }
         .icon-container{
             color:$yellowShade;
             max-width: 35px;

@@ -18,7 +18,6 @@ $('#toggler').on('click',()=>{
    
 })
 
-
 //login PopUp
 
 $('#closeButton').on('click',()=>{

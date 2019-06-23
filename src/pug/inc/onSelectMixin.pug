@@ -1,0 +1,7 @@
+mixin selectOne(na,...items)
+   .input-with-icon
+        .icon-container
+            i(class!=attributes.class)
+        select(name=na)
+            each it in items 
+                option=it

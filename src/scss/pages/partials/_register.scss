@@ -17,6 +17,10 @@
         @include mq('phone'){
             flex-direction:column;
             flex-wrap:nowrap;
+            height:auto;
+            overflow:none;
+            padding-bottom:2rem;
+            margin-bottom:2rem;
 
         }
         #title{
@@ -26,7 +30,7 @@
         
         #leftSide{  
             width:60%;
-            height:26rem;
+            height:auto;
             padding-top:3rem;
             @include mq('phone'){
                 width:100%;
@@ -61,6 +65,7 @@
             color:$yellow;
             @include mq('phone'){
                 width:100%;
+                display:none;
                 // flex-wrap:nowrap;
     
             }

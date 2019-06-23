@@ -39,8 +39,8 @@ gulp.task('pug', () => {
 gulp.task('scss', () => {
     return gulp.src(['./src/scss/*',
                      './src/scss/**/_*',
-                     'node_modules/bootstrap/scss/bootstrap-grid.scss',
-                     'node_modules/bootstrap/scss/bootstrap-reboot.scss'
+                     'node_modules/bootstrap/scss/bootstrap.scss',
+                   
                     ])
         .pipe(plumber(
             {

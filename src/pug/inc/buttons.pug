@@ -1,3 +1,4 @@
-#buttonSec  
-    a(href="#")#joinUs Join Us 
-    a(href="/register.html")#hireUsher Hire Usher
+mixin buttons(first,second,hrefOne,hrefTwo)
+    #buttonSec  
+        a(href=hrefOne)#joinUs=first
+        a(href=hrefTwo)#hireUsher=second

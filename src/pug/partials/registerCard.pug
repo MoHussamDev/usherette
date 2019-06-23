@@ -1,4 +1,5 @@
 include ../inc/oneInputMixin
+include ../inc/onSelectMixin
 section#register.container-fluid
        .container
             #registerCard              
@@ -16,6 +17,16 @@ section#register.container-fluid
                                 +inputOne('password','retype Password')(class="fa fa-lock")
                                 +inputOne('text','email address')(class="fa fa-envelope")
                                 +inputOne('text','Company')(class="fa fa-building")
+                                .row
+                                    .col-md-6
+                                        +selectOne("Country","Egypt","coutdevoire","anyother",5,6)(class="fa fa-flag")
+                                    .col-md-6
+                                        +selectOne("District","shrqia","whatever","anyother",5,6)(class="fa fa-location-arrow")
+                                .row
+                                    .col-md-6
+                                        +selectOne('Gender','male','female')(class="fa fa-venus-mars")
+                                    .col-md-6
+                                        +inputOne('date','asdaf')(class="fa fa-calendar")
                                 input(type="submit")
                         #rightSide
                                 //- h1 any else               

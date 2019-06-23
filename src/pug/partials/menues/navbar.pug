@@ -1,3 +1,4 @@
+include ../../inc/buttons
 nav#navigation.container-fluid
     .container
         .row    
@@ -6,7 +7,7 @@ nav#navigation.container-fluid
                  i#toggler.fa.fa-arrow-left 
             #menue.col-md-10
                  include ../../inc/navigate/navigation
-                 include ../../inc/buttons
+                 +buttons("Join us","Hire Usher","/signup.html","/register.html")
                  include ../../inc/loginPopup
 
                  
