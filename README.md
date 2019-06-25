@@ -1,8 +1,8 @@
-# Riiiads Starter Kit
+# MoHussam Front End Kit
 
-A starter kit for compiling Sass, Pug and running a dev server.
-Now also with typescript compiler.
+A starter kit for compiling Sass, Pug , js and running a dev server.
 Created by Riad ZT riiiaddesign@gmail.com
+And Developed By MoHussam mohamedhussamdev@gmail.com
 
 This package is inspired by the Traversy Media and Dev Tips starter kits.
 Check out the starter kits they are awesome.
@@ -20,7 +20,7 @@ DevTips: https://github.com/DevTips/DevTips-Starter-Kit
 
 ### Installation
 
-Install the dependencies (gulp, gulp-sass, gulp-pug, gulp-concat, gulp-imagemin, gulp-uglify, del, browser-sync, typescript, gulp-typescript)
+Install the dependencies (gulp, gulp-sass, node-sass, gulp-pug, gulp-concat, gulp-imagemin, gulp-uglify, del, browser-sync, typescript, gulp-typescript)
 
 ```sh
 $ npm install
