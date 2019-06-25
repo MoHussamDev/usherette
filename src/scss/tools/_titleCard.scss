@@ -1,0 +1,25 @@
+@mixin cardTitle{
+
+    #title{
+        padding-left:2rem;
+        padding-bottom:1rem;
+        h1{
+        font-weight: 600;
+        display:inline-block;
+        color: $yellowShade;
+        // background-color: $electro;
+        padding-left:0.3rem;
+        padding-right:0.3rem;
+    }
+    span{
+        font-weight:600;
+        padding-left:0.1rem;
+        font-size:2rem;
+        text-transform: capitalize;
+        color:$blueNight;
+        // background-color: $yellow;
+        
+    }
+}
+
+}

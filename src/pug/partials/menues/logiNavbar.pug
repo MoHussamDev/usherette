@@ -1,0 +1,11 @@
+include ../../inc/Buttons
+nav#navigation.container-fluid
+    .container
+        .row    
+            #brand.col-xs-12.col-md-2
+                 h1 USHERETTE
+                 i#toggler.fa.fa-arrow-left 
+            #menue.col-md-10
+                 include ../../inc/navigate/loginNavigate
+                 +buttons("Usher Site","Register","/","/register.html")
+                 

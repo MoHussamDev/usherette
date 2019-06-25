@@ -1,10 +1,10 @@
 @import '../../tools/oneInputForm';
-#register{
+#loginPage{
     display:flex;
     align-items:center;
     justify-content: center;
     height:auto;
-    #registerCard{
+    #loginCard{
         margin-top:20vh;
         height:auto;
         background-color: $whitesh;
@@ -24,11 +24,12 @@
 
         }
         @include cardTitle;
-        
         #leftSide{  
             width:60%;
             height:auto;
             padding-top:3rem;
+            padding-bottom:2rem;
+          
             @include mq('phone'){
                 width:100%;
                 // flex-wrap:nowrap;
@@ -43,12 +44,24 @@
                 flex-direction:column;
                 @include buttonSubmit;
                 @include inputWithIcon;
+                .forgetPassword{
+                    color: $yellowShade;
+                    text-decoration: none;
 
+                }
+                #submiting{
+                    margin-top:1rem;
+                    #rememPass{
+
+                        @include styledCheck;
+                    }
+                }
             }
         }
         #rightSide{
             width:40%;
-            height:40rem;
+            min-height:100%;
+            padding-bottom:2rem;
             background-color: $electro;
             color:$yellow;
             @include mq('phone'){

@@ -1,14 +1,21 @@
 include ../inc/oneInputMixin
-section#register.container-fluid
-      .container
-                         
+include ../inc/onSelectMixin
+section#loginPage.container-fluid
+       .container
+            #loginCard              
                         #leftSide
                             #title
-                                h1 Login
+                                h1 log
+                                span in
                             form
-                                .row   
-                                    col-12.col-md-6  
-                                        +inputOne('text','phone or email address')(class="fa fa-envelope")
-                                        +inputOne('password','password')(class="fa fa-lock")
-                                        input(type="submit")
+                                +inputOne('text',' phone')(class="fa fa-phone")
+                                +inputOne('password','password')(class="fa fa-lock")
+                                a(href="/").forgetPassword Forgot your password ?
+                                #submiting
+                                    #rememPass
+                                        input(type="checkbox").styled-checkbox#rem
+                                        label(for="rem") Remember Password 
+                                button(type="submit" value="Register") Login
+                                    i.fa.fa-arrow-right
                         #rightSide
+                                //- h1 any else               
